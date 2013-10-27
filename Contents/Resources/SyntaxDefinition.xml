@@ -3526,6 +3526,7 @@
 					<regex>(\b@??__ngettext) *\(</regex>
 					<regex>(\b@??__ngettext_noop) *\(</regex>
 					<regex>(\b@??__return_empty_array) *\(</regex>
+					<regex>(\b@??__return_empty_string) *\(</regex>
 					<regex>(\b@??__return_false) *\(</regex>
 					<regex>(\b@??__return_null) *\(</regex>
 					<regex>(\b@??__return_true) *\(</regex>
@@ -3539,6 +3540,7 @@
 					<regex>(\b@??_ajax_wp_die_handler) *\(</regex>
 					<regex>(\b@??_autop_newline_preservation_helper) *\(</regex>
 					<regex>(\b@??_c) *\(</regex>
+					<regex>(\b@??_canonical_charset) *\(</regex>
 					<regex>(\b@??_cleanup_header_comment) *\(</regex>
 					<regex>(\b@??_cleanup_image_add_caption) *\(</regex>
 					<regex>(\b@??_close_comments_for_old_post) *\(</regex>
@@ -3621,9 +3623,6 @@
 					<regex>(\b@??_post_format_link) *\(</regex>
 					<regex>(\b@??_post_format_request) *\(</regex>
 					<regex>(\b@??_post_format_wp_get_object_terms) *\(</regex>
-					<regex>(\b@??_post_formats_fix_empty_title) *\(</regex>
-					<regex>(\b@??_post_formats_generate_title) *\(</regex>
-					<regex>(\b@??_post_formats_title) *\(</regex>
 					<regex>(\b@??_post_states) *\(</regex>
 					<regex>(\b@??_post_type_meta_capabilities) *\(</regex>
 					<regex>(\b@??_preview_theme_stylesheet_filter) *\(</regex>
@@ -3638,6 +3637,7 @@
 					<regex>(\b@??_relocate_children) *\(</regex>
 					<regex>(\b@??_remove_qs_args_if_not_in_url) *\(</regex>
 					<regex>(\b@??_remove_theme_support) *\(</regex>
+					<regex>(\b@??_reset_front_page_settings_for_post) *\(</regex>
 					<regex>(\b@??_response_to_rss) *\(</regex>
 					<regex>(\b@??_rotate_image_resource) *\(</regex>
 					<regex>(\b@??_save_post_hook) *\(</regex>
@@ -3701,12 +3701,10 @@
 					<regex>(\b@??_wp_object_name_sort_cb) *\(</regex>
 					<regex>(\b@??_wp_oembed_get_object) *\(</regex>
 					<regex>(\b@??_wp_post_revision_fields) *\(</regex>
-					<regex>(\b@??_wp_post_revision_meta_keys) *\(</regex>
 					<regex>(\b@??_wp_post_thumbnail_class_filter) *\(</regex>
 					<regex>(\b@??_wp_post_thumbnail_class_filter_add) *\(</regex>
 					<regex>(\b@??_wp_post_thumbnail_class_filter_remove) *\(</regex>
 					<regex>(\b@??_wp_post_thumbnail_html) *\(</regex>
-					<regex>(\b@??_wp_preview_meta_filter) *\(</regex>
 					<regex>(\b@??_wp_preview_terms_filter) *\(</regex>
 					<regex>(\b@??_wp_put_post_revision) *\(</regex>
 					<regex>(\b@??_wp_relative_upload_path) *\(</regex>
@@ -3724,7 +3722,6 @@
 					<regex>(\b@??activate_sitewide_plugin) *\(</regex>
 					<regex>(\b@??add_action) *\(</regex>
 					<regex>(\b@??add_blog_option) *\(</regex>
-					<regex>(\b@??add_chat_detection_format) *\(</regex>
 					<regex>(\b@??add_clean_index) *\(</regex>
 					<regex>(\b@??add_comment_meta) *\(</regex>
 					<regex>(\b@??add_comments_page) *\(</regex>
@@ -3792,6 +3789,7 @@
 					<regex>(\b@??admin_url) *\(</regex>
 					<regex>(\b@??allow_subdirectory_install) *\(</regex>
 					<regex>(\b@??allow_subdomain_install) *\(</regex>
+					<regex>(\b@??allowed_http_request_hosts) *\(</regex>
 					<regex>(\b@??allowed_tags) *\(</regex>
 					<regex>(\b@??antispambot) *\(</regex>
 					<regex>(\b@??apache_mod_loaded) *\(</regex>
@@ -3800,7 +3798,6 @@
 					<regex>(\b@??atom_enclosure) *\(</regex>
 					<regex>(\b@??attachment_submit_meta_box) *\(</regex>
 					<regex>(\b@??attachment_submitbox_metadata) *\(</regex>
-					<regex>(\b@??attachment_url_to_postid) *\(</regex>
 					<regex>(\b@??attribute_escape) *\(</regex>
 					<regex>(\b@??auth_redirect) *\(</regex>
 					<regex>(\b@??author_can) *\(</regex>
@@ -3989,7 +3986,6 @@
 					<regex>(\b@??dropdown_categories) *\(</regex>
 					<regex>(\b@??dropdown_cats) *\(</regex>
 					<regex>(\b@??dropdown_link_categories) *\(</regex>
-					<regex>(\b@??dvortr) *\(</regex>
 					<regex>(\b@??dynamic_sidebar) *\(</regex>
 					<regex>(\b@??edit_bookmark_link) *\(</regex>
 					<regex>(\b@??edit_comment) *\(</regex>
@@ -4031,6 +4027,7 @@
 					<regex>(\b@??file_is_displayable_image) *\(</regex>
 					<regex>(\b@??file_is_valid_image) *\(</regex>
 					<regex>(\b@??filter_ssl) *\(</regex>
+					<regex>(\b@??find_core_auto_update) *\(</regex>
 					<regex>(\b@??find_core_update) *\(</regex>
 					<regex>(\b@??find_posts_div) *\(</regex>
 					<regex>(\b@??fix_import_form_size) *\(</regex>
@@ -4054,6 +4051,7 @@
 					<regex>(\b@??get_404_template) *\(</regex>
 					<regex>(\b@??get_active_blog_for_user) *\(</regex>
 					<regex>(\b@??get_adjacent_post) *\(</regex>
+					<regex>(\b@??get_adjacent_post_link) *\(</regex>
 					<regex>(\b@??get_adjacent_post_rel_link) *\(</regex>
 					<regex>(\b@??get_admin_page_parent) *\(</regex>
 					<regex>(\b@??get_admin_page_title) *\(</regex>
@@ -4073,12 +4071,8 @@
 					<regex>(\b@??get_archive_template) *\(</regex>
 					<regex>(\b@??get_archives) *\(</regex>
 					<regex>(\b@??get_archives_link) *\(</regex>
-					<regex>(\b@??get_attached_audio) *\(</regex>
 					<regex>(\b@??get_attached_file) *\(</regex>
-					<regex>(\b@??get_attached_image_srcs) *\(</regex>
-					<regex>(\b@??get_attached_images) *\(</regex>
 					<regex>(\b@??get_attached_media) *\(</regex>
-					<regex>(\b@??get_attached_video) *\(</regex>
 					<regex>(\b@??get_attachment_fields_to_edit) *\(</regex>
 					<regex>(\b@??get_attachment_icon) *\(</regex>
 					<regex>(\b@??get_attachment_icon_src) *\(</regex>
@@ -4173,15 +4167,7 @@
 					<regex>(\b@??get_comments_pagenum_link) *\(</regex>
 					<regex>(\b@??get_comments_popup_template) *\(</regex>
 					<regex>(\b@??get_compat_media_markup) *\(</regex>
-					<regex>(\b@??get_content_audio) *\(</regex>
-					<regex>(\b@??get_content_chat) *\(</regex>
-					<regex>(\b@??get_content_galleries) *\(</regex>
-					<regex>(\b@??get_content_image) *\(</regex>
-					<regex>(\b@??get_content_images) *\(</regex>
-					<regex>(\b@??get_content_media) *\(</regex>
-					<regex>(\b@??get_content_quote) *\(</regex>
-					<regex>(\b@??get_content_url) *\(</regex>
-					<regex>(\b@??get_content_video) *\(</regex>
+					<regex>(\b@??get_core_checksums) *\(</regex>
 					<regex>(\b@??get_core_updates) *\(</regex>
 					<regex>(\b@??get_current_blog_id) *\(</regex>
 					<regex>(\b@??get_current_screen) *\(</regex>
@@ -4213,9 +4199,6 @@
 					<regex>(\b@??get_editable_authors) *\(</regex>
 					<regex>(\b@??get_editable_roles) *\(</regex>
 					<regex>(\b@??get_editable_user_ids) *\(</regex>
-					<regex>(\b@??get_embedded_audio) *\(</regex>
-					<regex>(\b@??get_embedded_media) *\(</regex>
-					<regex>(\b@??get_embedded_video) *\(</regex>
 					<regex>(\b@??get_enclosed) *\(</regex>
 					<regex>(\b@??get_extended) *\(</regex>
 					<regex>(\b@??get_feed_link) *\(</regex>
@@ -4260,6 +4243,7 @@
 					<regex>(\b@??get_linksbyname_withrating) *\(</regex>
 					<regex>(\b@??get_locale) *\(</regex>
 					<regex>(\b@??get_locale_stylesheet_uri) *\(</regex>
+					<regex>(\b@??get_media_embedded_in_content) *\(</regex>
 					<regex>(\b@??get_media_item) *\(</regex>
 					<regex>(\b@??get_media_items) *\(</regex>
 					<regex>(\b@??get_meta_keys) *\(</regex>
@@ -4273,6 +4257,7 @@
 					<regex>(\b@??get_nav_menu_locations) *\(</regex>
 					<regex>(\b@??get_next_comments_link) *\(</regex>
 					<regex>(\b@??get_next_post) *\(</regex>
+					<regex>(\b@??get_next_post_link) *\(</regex>
 					<regex>(\b@??get_next_posts_link) *\(</regex>
 					<regex>(\b@??get_next_posts_page_link) *\(</regex>
 					<regex>(\b@??get_nonauthor_user_ids) *\(</regex>
@@ -4296,7 +4281,6 @@
 					<regex>(\b@??get_page_template_slug) *\(</regex>
 					<regex>(\b@??get_page_templates) *\(</regex>
 					<regex>(\b@??get_page_uri) *\(</regex>
-					<regex>(\b@??get_paged_content) *\(</regex>
 					<regex>(\b@??get_paged_template) *\(</regex>
 					<regex>(\b@??get_pagenum_link) *\(</regex>
 					<regex>(\b@??get_pages) *\(</regex>
@@ -4318,9 +4302,7 @@
 					<regex>(\b@??get_post_custom_values) *\(</regex>
 					<regex>(\b@??get_post_field) *\(</regex>
 					<regex>(\b@??get_post_format) *\(</regex>
-					<regex>(\b@??get_post_format_content_class) *\(</regex>
 					<regex>(\b@??get_post_format_link) *\(</regex>
-					<regex>(\b@??get_post_format_meta) *\(</regex>
 					<regex>(\b@??get_post_format_slugs) *\(</regex>
 					<regex>(\b@??get_post_format_string) *\(</regex>
 					<regex>(\b@??get_post_format_strings) *\(</regex>
@@ -4346,6 +4328,7 @@
 					<regex>(\b@??get_post_type) *\(</regex>
 					<regex>(\b@??get_post_type_archive_feed_link) *\(</regex>
 					<regex>(\b@??get_post_type_archive_link) *\(</regex>
+					<regex>(\b@??get_post_type_archive_template) *\(</regex>
 					<regex>(\b@??get_post_type_capabilities) *\(</regex>
 					<regex>(\b@??get_post_type_labels) *\(</regex>
 					<regex>(\b@??get_post_type_object) *\(</regex>
@@ -4357,6 +4340,7 @@
 					<regex>(\b@??get_preferred_from_update_core) *\(</regex>
 					<regex>(\b@??get_previous_comments_link) *\(</regex>
 					<regex>(\b@??get_previous_post) *\(</regex>
+					<regex>(\b@??get_previous_post_link) *\(</regex>
 					<regex>(\b@??get_previous_posts_link) *\(</regex>
 					<regex>(\b@??get_previous_posts_page_link) *\(</regex>
 					<regex>(\b@??get_private_posts_cap_sql) *\(</regex>
@@ -4460,13 +4444,7 @@
 					<regex>(\b@??get_the_modified_date) *\(</regex>
 					<regex>(\b@??get_the_modified_time) *\(</regex>
 					<regex>(\b@??get_the_password_form) *\(</regex>
-					<regex>(\b@??get_the_post_format_chat) *\(</regex>
-					<regex>(\b@??get_the_post_format_image) *\(</regex>
-					<regex>(\b@??get_the_post_format_media) *\(</regex>
-					<regex>(\b@??get_the_post_format_quote) *\(</regex>
-					<regex>(\b@??get_the_post_format_url) *\(</regex>
 					<regex>(\b@??get_the_post_thumbnail) *\(</regex>
-					<regex>(\b@??get_the_remaining_content) *\(</regex>
 					<regex>(\b@??get_the_tag_list) *\(</regex>
 					<regex>(\b@??get_the_tags) *\(</regex>
 					<regex>(\b@??get_the_taxonomies) *\(</regex>
@@ -4494,6 +4472,7 @@
 					<regex>(\b@??get_upload_iframe_src) *\(</regex>
 					<regex>(\b@??get_upload_space_available) *\(</regex>
 					<regex>(\b@??get_uploaded_header_images) *\(</regex>
+					<regex>(\b@??get_url_in_content) *\(</regex>
 					<regex>(\b@??get_user_by) *\(</regex>
 					<regex>(\b@??get_user_by_email) *\(</regex>
 					<regex>(\b@??get_user_count) *\(</regex>
@@ -4517,6 +4496,7 @@
 					<regex>(\b@??global_terms) *\(</regex>
 					<regex>(\b@??global_terms_enabled) *\(</regex>
 					<regex>(\b@??got_mod_rewrite) *\(</regex>
+					<regex>(\b@??got_url_rewrite) *\(</regex>
 					<regex>(\b@??graceful_fail) *\(</regex>
 					<regex>(\b@??grant_super_admin) *\(</regex>
 					<regex>(\b@??gzip_compression) *\(</regex>
@@ -4617,6 +4597,7 @@
 					<regex>(\b@??is_lighttpd_before_150) *\(</regex>
 					<regex>(\b@??is_local_attachment) *\(</regex>
 					<regex>(\b@??is_main_blog) *\(</regex>
+					<regex>(\b@??is_main_network) *\(</regex>
 					<regex>(\b@??is_main_query) *\(</regex>
 					<regex>(\b@??is_main_site) *\(</regex>
 					<regex>(\b@??is_month) *\(</regex>
@@ -4700,6 +4681,7 @@
 					<regex>(\b@??list_meta) *\(</regex>
 					<regex>(\b@??list_plugin_updates) *\(</regex>
 					<regex>(\b@??list_theme_updates) *\(</regex>
+					<regex>(\b@??list_translation_updates) *\(</regex>
 					<regex>(\b@??load_child_theme_textdomain) *\(</regex>
 					<regex>(\b@??load_default_textdomain) *\(</regex>
 					<regex>(\b@??load_image_to_edit) *\(</regex>
@@ -4733,6 +4715,7 @@
 					<regex>(\b@??maybe_serialize) *\(</regex>
 					<regex>(\b@??maybe_unserialize) *\(</regex>
 					<regex>(\b@??mb_substr) *\(</regex>
+					<regex>(\b@??mbstring_binary_safe_encoding) *\(</regex>
 					<regex>(\b@??media_buttons) *\(</regex>
 					<regex>(\b@??media_handle_sideload) *\(</regex>
 					<regex>(\b@??media_handle_upload) *\(</regex>
@@ -4762,6 +4745,7 @@
 					<regex>(\b@??meta_box_prefs) *\(</regex>
 					<regex>(\b@??meta_form) *\(</regex>
 					<regex>(\b@??metadata_exists) *\(</regex>
+					<regex>(\b@??ms_allowed_http_request_hosts) *\(</regex>
 					<regex>(\b@??ms_cookie_constants) *\(</regex>
 					<regex>(\b@??ms_deprecated_blogs_file) *\(</regex>
 					<regex>(\b@??ms_file_constants) *\(</regex>
@@ -4804,7 +4788,6 @@
 					<regex>(\b@??page_attributes_meta_box) *\(</regex>
 					<regex>(\b@??page_template_dropdown) *\(</regex>
 					<regex>(\b@??paginate_comments_links) *\(</regex>
-					<regex>(\b@??paginate_content) *\(</regex>
 					<regex>(\b@??paginate_links) *\(</regex>
 					<regex>(\b@??parent_dropdown) *\(</regex>
 					<regex>(\b@??parent_post_rel_link) *\(</regex>
@@ -4852,9 +4835,7 @@
 					<regex>(\b@??post_custom_meta_box) *\(</regex>
 					<regex>(\b@??post_excerpt_meta_box) *\(</regex>
 					<regex>(\b@??post_exists) *\(</regex>
-					<regex>(\b@??post_format_content_class) *\(</regex>
 					<regex>(\b@??post_format_meta_box) *\(</regex>
-					<regex>(\b@??post_formats_compat) *\(</regex>
 					<regex>(\b@??post_password_required) *\(</regex>
 					<regex>(\b@??post_permalink) *\(</regex>
 					<regex>(\b@??post_preview) *\(</regex>
@@ -4948,6 +4929,7 @@
 					<regex>(\b@??request_filesystem_credentials) *\(</regex>
 					<regex>(\b@??require_if_theme_supports) *\(</regex>
 					<regex>(\b@??require_wp_db) *\(</regex>
+					<regex>(\b@??reset_mbstring_encoding) *\(</regex>
 					<regex>(\b@??reset_password) *\(</regex>
 					<regex>(\b@??restore_current_blog) *\(</regex>
 					<regex>(\b@??retrieve_password) *\(</regex>
@@ -4994,7 +4976,6 @@
 					<regex>(\b@??screen_options) *\(</regex>
 					<regex>(\b@??script_concat_settings) *\(</regex>
 					<regex>(\b@??search_theme_directories) *\(</regex>
-					<regex>(\b@??secret_salt_warning) *\(</regex>
 					<regex>(\b@??seems_utf8) *\(</regex>
 					<regex>(\b@??selected) *\(</regex>
 					<regex>(\b@??self_admin_url) *\(</regex>
@@ -5113,16 +5094,8 @@
 					<regex>(\b@??the_permalink) *\(</regex>
 					<regex>(\b@??the_permalink_rss) *\(</regex>
 					<regex>(\b@??the_post) *\(</regex>
-					<regex>(\b@??the_post_format_audio) *\(</regex>
-					<regex>(\b@??the_post_format_chat) *\(</regex>
-					<regex>(\b@??the_post_format_gallery) *\(</regex>
-					<regex>(\b@??the_post_format_image) *\(</regex>
-					<regex>(\b@??the_post_format_quote) *\(</regex>
-					<regex>(\b@??the_post_format_url) *\(</regex>
-					<regex>(\b@??the_post_format_video) *\(</regex>
 					<regex>(\b@??the_post_password) *\(</regex>
 					<regex>(\b@??the_post_thumbnail) *\(</regex>
-					<regex>(\b@??the_remaining_content) *\(</regex>
 					<regex>(\b@??the_search_query) *\(</regex>
 					<regex>(\b@??the_shortlink) *\(</regex>
 					<regex>(\b@??the_tags) *\(</regex>
@@ -5166,6 +5139,7 @@
 					<regex>(\b@??unregister_setting) *\(</regex>
 					<regex>(\b@??unregister_sidebar) *\(</regex>
 					<regex>(\b@??unregister_sidebar_widget) *\(</regex>
+					<regex>(\b@??unregister_taxonomy_for_object_type) *\(</regex>
 					<regex>(\b@??unregister_widget) *\(</regex>
 					<regex>(\b@??unregister_widget_control) *\(</regex>
 					<regex>(\b@??unstick_post) *\(</regex>
@@ -5226,6 +5200,7 @@
 					<regex>(\b@??upgrade_330) *\(</regex>
 					<regex>(\b@??upgrade_340) *\(</regex>
 					<regex>(\b@??upgrade_350) *\(</regex>
+					<regex>(\b@??upgrade_370) *\(</regex>
 					<regex>(\b@??upgrade_all) *\(</regex>
 					<regex>(\b@??upgrade_network) *\(</regex>
 					<regex>(\b@??upgrade_old_slugs) *\(</regex>
@@ -5270,6 +5245,7 @@
 					<regex>(\b@??validate_user_form) *\(</regex>
 					<regex>(\b@??validate_user_signup) *\(</regex>
 					<regex>(\b@??validate_username) *\(</regex>
+					<regex>(\b@??verify_file_md5) *\(</regex>
 					<regex>(\b@??walk_category_dropdown_tree) *\(</regex>
 					<regex>(\b@??walk_category_tree) *\(</regex>
 					<regex>(\b@??walk_nav_menu_tree) *\(</regex>
@@ -5329,6 +5305,7 @@
 					<regex>(\b@??wp_ajax_get_attachment) *\(</regex>
 					<regex>(\b@??wp_ajax_get_comments) *\(</regex>
 					<regex>(\b@??wp_ajax_get_permalink) *\(</regex>
+					<regex>(\b@??wp_ajax_get_revision_diffs) *\(</regex>
 					<regex>(\b@??wp_ajax_get_tagcloud) *\(</regex>
 					<regex>(\b@??wp_ajax_heartbeat) *\(</regex>
 					<regex>(\b@??wp_ajax_hidden_columns) *\(</regex>
@@ -5345,7 +5322,6 @@
 					<regex>(\b@??wp_ajax_oembed_cache) *\(</regex>
 					<regex>(\b@??wp_ajax_query_attachments) *\(</regex>
 					<regex>(\b@??wp_ajax_replyto_comment) *\(</regex>
-					<regex>(\b@??wp_ajax_revisions_data) *\(</regex>
 					<regex>(\b@??wp_ajax_sample_permalink) *\(</regex>
 					<regex>(\b@??wp_ajax_save_attachment) *\(</regex>
 					<regex>(\b@??wp_ajax_save_attachment_compat) *\(</regex>
@@ -5354,7 +5330,6 @@
 					<regex>(\b@??wp_ajax_send_attachment_to_editor) *\(</regex>
 					<regex>(\b@??wp_ajax_send_link_to_editor) *\(</regex>
 					<regex>(\b@??wp_ajax_set_post_thumbnail) *\(</regex>
-					<regex>(\b@??wp_ajax_show_post_format_ui) *\(</regex>
 					<regex>(\b@??wp_ajax_time_format) *\(</regex>
 					<regex>(\b@??wp_ajax_trash_post) *\(</regex>
 					<regex>(\b@??wp_ajax_untrash_post) *\(</regex>
@@ -5375,6 +5350,7 @@
 					<regex>(\b@??wp_auth_check_load) *\(</regex>
 					<regex>(\b@??wp_authenticate) *\(</regex>
 					<regex>(\b@??wp_authenticate_cookie) *\(</regex>
+					<regex>(\b@??wp_authenticate_spam_check) *\(</regex>
 					<regex>(\b@??wp_authenticate_username_password) *\(</regex>
 					<regex>(\b@??wp_basename) *\(</regex>
 					<regex>(\b@??wp_blacklist_check) *\(</regex>
@@ -5407,6 +5383,7 @@
 					<regex>(\b@??wp_check_post_lock) *\(</regex>
 					<regex>(\b@??wp_check_term_hierarchy_for_loops) *\(</regex>
 					<regex>(\b@??wp_checkdate) *\(</regex>
+					<regex>(\b@??wp_clean_plugins_cache) *\(</regex>
 					<regex>(\b@??wp_clean_themes_cache) *\(</regex>
 					<regex>(\b@??wp_clear_auth_cookie) *\(</regex>
 					<regex>(\b@??wp_clear_scheduled_hook) *\(</regex>
@@ -5510,6 +5487,7 @@
 					<regex>(\b@??wp_expand_dimensions) *\(</regex>
 					<regex>(\b@??wp_explain_nonce) *\(</regex>
 					<regex>(\b@??wp_ext2type) *\(</regex>
+					<regex>(\b@??wp_extract_urls) *\(</regex>
 					<regex>(\b@??wp_favicon_request) *\(</regex>
 					<regex>(\b@??wp_filesystem) *\(</regex>
 					<regex>(\b@??wp_filter_comment) *\(</regex>
@@ -5547,6 +5525,7 @@
 					<regex>(\b@??wp_get_http) *\(</regex>
 					<regex>(\b@??wp_get_http_headers) *\(</regex>
 					<regex>(\b@??wp_get_image_editor) *\(</regex>
+					<regex>(\b@??wp_get_installed_translations) *\(</regex>
 					<regex>(\b@??wp_get_link_cats) *\(</regex>
 					<regex>(\b@??wp_get_links) *\(</regex>
 					<regex>(\b@??wp_get_linksbyname) *\(</regex>
@@ -5559,6 +5538,7 @@
 					<regex>(\b@??wp_get_nocache_headers) *\(</regex>
 					<regex>(\b@??wp_get_object_terms) *\(</regex>
 					<regex>(\b@??wp_get_original_referer) *\(</regex>
+					<regex>(\b@??wp_get_pomo_file_data) *\(</regex>
 					<regex>(\b@??wp_get_popular_importers) *\(</regex>
 					<regex>(\b@??wp_get_post_autosave) *\(</regex>
 					<regex>(\b@??wp_get_post_categories) *\(</regex>
@@ -5570,15 +5550,19 @@
 					<regex>(\b@??wp_get_post_terms) *\(</regex>
 					<regex>(\b@??wp_get_recent_posts) *\(</regex>
 					<regex>(\b@??wp_get_referer) *\(</regex>
+					<regex>(\b@??wp_get_revision_ui_diff) *\(</regex>
 					<regex>(\b@??wp_get_schedule) *\(</regex>
 					<regex>(\b@??wp_get_schedules) *\(</regex>
 					<regex>(\b@??wp_get_shortlink) *\(</regex>
 					<regex>(\b@??wp_get_sidebars_widgets) *\(</regex>
 					<regex>(\b@??wp_get_single_post) *\(</regex>
+					<regex>(\b@??wp_get_sites) *\(</regex>
 					<regex>(\b@??wp_get_term_taxonomy_parent_id) *\(</regex>
 					<regex>(\b@??wp_get_theme) *\(</regex>
 					<regex>(\b@??wp_get_themes) *\(</regex>
+					<regex>(\b@??wp_get_translation_updates) *\(</regex>
 					<regex>(\b@??wp_get_update_data) *\(</regex>
+					<regex>(\b@??wp_get_user_contact_methods) *\(</regex>
 					<regex>(\b@??wp_get_video_extensions) *\(</regex>
 					<regex>(\b@??wp_get_widget_defaults) *\(</regex>
 					<regex>(\b@??wp_guess_url) *\(</regex>
@@ -5591,6 +5575,7 @@
 					<regex>(\b@??wp_html_excerpt) *\(</regex>
 					<regex>(\b@??wp_htmledit_pre) *\(</regex>
 					<regex>(\b@??wp_http_supports) *\(</regex>
+					<regex>(\b@??wp_http_validate_url) *\(</regex>
 					<regex>(\b@??wp_iframe) *\(</regex>
 					<regex>(\b@??wp_image_editor) *\(</regex>
 					<regex>(\b@??wp_image_editor_supports) *\(</regex>
@@ -5664,6 +5649,7 @@
 					<regex>(\b@??wp_login) *\(</regex>
 					<regex>(\b@??wp_login_form) *\(</regex>
 					<regex>(\b@??wp_login_url) *\(</regex>
+					<regex>(\b@??wp_login_viewport_meta) *\(</regex>
 					<regex>(\b@??wp_loginout) *\(</regex>
 					<regex>(\b@??wp_logout) *\(</regex>
 					<regex>(\b@??wp_logout_url) *\(</regex>
@@ -5674,8 +5660,11 @@
 					<regex>(\b@??wp_make_link_relative) *\(</regex>
 					<regex>(\b@??wp_match_mime_types) *\(</regex>
 					<regex>(\b@??wp_max_upload_size) *\(</regex>
+					<regex>(\b@??wp_maybe_auto_update) *\(</regex>
 					<regex>(\b@??wp_maybe_load_embeds) *\(</regex>
 					<regex>(\b@??wp_maybe_load_widgets) *\(</regex>
+					<regex>(\b@??wp_maybe_update_network_site_counts) *\(</regex>
+					<regex>(\b@??wp_maybe_update_network_user_counts) *\(</regex>
 					<regex>(\b@??wp_media_insert_url_form) *\(</regex>
 					<regex>(\b@??wp_media_upload_handler) *\(</regex>
 					<regex>(\b@??wp_mediaelement_fallback) *\(</regex>
@@ -5731,6 +5720,7 @@
 					<regex>(\b@??wp_pre_kses_less_than_callback) *\(</regex>
 					<regex>(\b@??wp_preload_dialogs) *\(</regex>
 					<regex>(\b@??wp_prepare_attachment_for_js) *\(</regex>
+					<regex>(\b@??wp_prepare_revisions_for_js) *\(</regex>
 					<regex>(\b@??wp_print_editor_js) *\(</regex>
 					<regex>(\b@??wp_print_footer_scripts) *\(</regex>
 					<regex>(\b@??wp_print_head_scripts) *\(</regex>
@@ -5749,6 +5739,7 @@
 					<regex>(\b@??wp_redirect_admin_locations) *\(</regex>
 					<regex>(\b@??wp_referer_field) *\(</regex>
 					<regex>(\b@??wp_refresh_post_lock) *\(</regex>
+					<regex>(\b@??wp_refresh_post_nonces) *\(</regex>
 					<regex>(\b@??wp_register) *\(</regex>
 					<regex>(\b@??wp_register_script) *\(</regex>
 					<regex>(\b@??wp_register_sidebar_widget) *\(</regex>
@@ -5780,6 +5771,10 @@
 					<regex>(\b@??wp_richedit_pre) *\(</regex>
 					<regex>(\b@??wp_rss) *\(</regex>
 					<regex>(\b@??wp_safe_redirect) *\(</regex>
+					<regex>(\b@??wp_safe_remote_get) *\(</regex>
+					<regex>(\b@??wp_safe_remote_head) *\(</regex>
+					<regex>(\b@??wp_safe_remote_post) *\(</regex>
+					<regex>(\b@??wp_safe_remote_request) *\(</regex>
 					<regex>(\b@??wp_salt) *\(</regex>
 					<regex>(\b@??wp_sanitize_redirect) *\(</regex>
 					<regex>(\b@??wp_save_image) *\(</regex>
@@ -5831,6 +5826,7 @@
 					<regex>(\b@??wp_start_object_cache) *\(</regex>
 					<regex>(\b@??wp_stream_image) *\(</regex>
 					<regex>(\b@??wp_strip_all_tags) *\(</regex>
+					<regex>(\b@??wp_style_add_data) *\(</regex>
 					<regex>(\b@??wp_style_is) *\(</regex>
 					<regex>(\b@??wp_style_loader_src) *\(</regex>
 					<regex>(\b@??wp_suspend_cache_addition) *\(</regex>
@@ -5840,7 +5836,6 @@
 					<regex>(\b@??wp_tempnam) *\(</regex>
 					<regex>(\b@??wp_terms_checklist) *\(</regex>
 					<regex>(\b@??wp_text_diff) *\(</regex>
-					<regex>(\b@??wp_text_diff_with_count) *\(</regex>
 					<regex>(\b@??wp_theme_update_row) *\(</regex>
 					<regex>(\b@??wp_theme_update_rows) *\(</regex>
 					<regex>(\b@??wp_throttle_comment_flood) *\(</regex>
@@ -5879,6 +5874,8 @@
 					<regex>(\b@??wp_update_nav_menu_item) *\(</regex>
 					<regex>(\b@??wp_update_nav_menu_object) *\(</regex>
 					<regex>(\b@??wp_update_network_counts) *\(</regex>
+					<regex>(\b@??wp_update_network_site_counts) *\(</regex>
+					<regex>(\b@??wp_update_network_user_counts) *\(</regex>
 					<regex>(\b@??wp_update_plugin) *\(</regex>
 					<regex>(\b@??wp_update_plugins) *\(</regex>
 					<regex>(\b@??wp_update_post) *\(</regex>
@@ -5892,6 +5889,7 @@
 					<regex>(\b@??wp_upload_bits) *\(</regex>
 					<regex>(\b@??wp_upload_dir) *\(</regex>
 					<regex>(\b@??wp_user_settings) *\(</regex>
+					<regex>(\b@??wp_using_ext_object_cache) *\(</regex>
 					<regex>(\b@??wp_validate_auth_cookie) *\(</regex>
 					<regex>(\b@??wp_validate_redirect) *\(</regex>
 					<regex>(\b@??wp_verify_nonce) *\(</regex>
